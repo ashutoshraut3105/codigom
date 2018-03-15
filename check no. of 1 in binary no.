@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int num,cnt,n;
+cnt=0;
+n=1;
+cout<<"\nEnter the no.:  ";
+cin>>num;
+while(n<=num)
+{
+if((num&n))
+{
+cnt++;
+}
+n=n<<1;
+}
+cout<<"\nNo. of ones :   "<<cnt<<endl;
+return 0;
+}
