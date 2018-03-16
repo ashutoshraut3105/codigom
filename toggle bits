@@ -1,0 +1,22 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+int num,n,bit,pos;
+cout<<"\nEnter the number:   ";
+cin>>num;
+cout<<"\nEnter the position from where you want to toggle:  ";
+cin>>pos;
+cout<<"\nEnter the no. of bits from that position to toggle:  ";
+cin>>bit;
+n=pow(2,pos-1);
+for(int i=0;i<bit;i++)
+{
+num=num|n;
+n=n<<1;
+}
+cout<<num<<endl;
+return 0;
+}
