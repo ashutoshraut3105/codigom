@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int total, day, night, answer,j = 0, count = 0;
+    cout<<"Enter total number of steps: ";
+    cin>>total;
+    cout<<"\nEnter the number of steps climbed in a day: ";
+    cin>>day;
+    cout<<"\nEnter the number of steps gone back in night: ";
+    cin>>night;
+    
+   for(int answer = 0; answer<total; )
+    {
+     answer = j + day;
+     j = answer - night;
+    count ++;
+        
+        if(answer == total)
+        break;
+    }
+    cout<<"\nNumber of days required are "<<count;
+    
+}
